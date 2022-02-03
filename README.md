@@ -17,18 +17,18 @@ Gunakan fungsi `numberToColorHsl(choose_scale/max_scale, min, max)` untuk output
 ```php
 <?php
 
-require  "heatmap.php";
+require "heatmap.php";
 
 // set scale by tuning below variable
-$scale  =  20;
+$scale = 20;
 
-$listcolor  =  '<ul>';
-for ($i  =  0; $i  <=  $scale; $i++) {
-	$listcolor  .=  '<li style="background-color:'  .  numberToColorHsl($i  /  $scale,  0,  1) .  '">'  .  $i  .  "</li>\n";
+$listcolor = '<ul>';
+for ($i = 0; $i <= $scale; $i++) {
+	$listcolor .= '<li style="background-color:' . numberToColorHsl($i / $scale, 0, 1) . '">' . $i . "</li>\n";
 }
-$listcolor  .=  '</ul>';
+$listcolor .= '</ul>';
 
-echo  $listcolor;
+echo $listcolor;
 ?>
 ```
 
